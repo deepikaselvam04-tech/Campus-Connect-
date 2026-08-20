@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect | Student Opportunity Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Campus<span>Connect</span></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#opportunities">Opportunities</a>
+        <a href="#saved">Saved</a>
+        <a href="#tracker">Tracker</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1>Connect. Discover. Grow.</h1>
+        <p>
+            Find internships, jobs and career opportunities
+            designed for students.
+        </p>
+
+        <a href="#opportunities" class="btn">Explore Opportunities</a>
+    </div>
+</section>
+
+<section class="search-section">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search internships, jobs or skills..."
+        onkeyup="searchOpportunities()"
+    >
+</section>
+
+<section id="opportunities" class="container">
+
+    <h2>Latest Opportunities</h2>
+
+    <div class="cards" id="opportunityList">
+
+        <div class="card" data-title="Frontend Developer Internship">
+            <span class="tag">Internship</span>
+            <h3>Frontend Developer Intern</h3>
+            <p>Build responsive websites using HTML, CSS and JavaScript.</p>
+            <p><b>Skills:</b> HTML • CSS • JavaScript</p>
+
+            <button onclick="saveOpportunity('Frontend Developer Intern')">
+                ❤️ Save
+            </button>
+
+            <button onclick="applyOpportunity('Frontend Developer Intern')">
+                Apply
+            </button>
+        </div>
+
+        <div class="card" data-title="Java Developer Internship">
+            <span class="tag">Internship</span>
+            <h3>Java Developer Intern</h3>
+            <p>Work on real-world Java application development projects.</p>
+            <p><b>Skills:</b> Java • SQL • OOP</p>
+
+            <button onclick="saveOpportunity('Java Developer Intern')">
+                ❤️ Save
+            </button>
+
+            <button onclick="applyOpportunity('Java Developer Intern')">
+                Apply
+            </button>
+        </div>
+
+        <div class="card" data-title="Data Analyst Job">
+            <span class="tag job">Job</span>
+            <h3>Junior Data Analyst</h3>
+            <p>Analyze datasets and create meaningful business insights.</p>
+            <p><b>Skills:</b> Python • Excel • SQL</p>
+
+            <button onclick="saveOpportunity('Junior Data Analyst')">
+                ❤️ Save
+            </button>
+
+            <button onclick="applyOpportunity('Junior Data Analyst')">
+                Apply
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<section id="saved" class="container">
+    <h2>Saved Opportunities</h2>
+    <ul id="savedList"></ul>
+</section>
+
+<section id="tracker" class="container">
+    <h2>Application Tracker</h2>
+    <div id="applicationList"></div>
+</section>
+
+<footer>
+    <p>© 2026 CampusConnect | Student Career Opportunity Platform</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

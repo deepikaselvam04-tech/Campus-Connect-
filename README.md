@@ -35,6 +35,10 @@ The goal of CampusConnect is to provide students with a simple and centralized p
 
 This project is a working frontend MVP prototype.
 
+## 🌐 Live Demo
+
+[View CampusConnect Live Website](https://deepikaselvam04-tech.github.io/Campus-Connect-/)
+
 ## Future Enhancements
 
 - User authentication
@@ -44,7 +48,15 @@ This project is a working frontend MVP prototype.
 - Student profile management
 - Email notifications
 - Admin dashboard
+- 
+## ✨ Features
 
+- 🔍 Search internship and job opportunities
+- ❤️ Save opportunities
+- 📝 Apply for opportunities
+- 📊 Track applications
+- 📱 Responsive mobile-friendly design
+- 
 ## Author
 
 Deepika
